@@ -3,12 +3,7 @@ package ru.netology.domain.manager.PosterManager;
 public class ManagerPoster {
     int count = 10;
 
-    public ManagerPoster(int count) {
-        this.count = count;
-    }
 
-    public ManagerPoster() {
-    }
 
     private PosterItem[] items = new PosterItem[0];
 
