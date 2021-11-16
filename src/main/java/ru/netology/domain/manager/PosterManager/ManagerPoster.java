@@ -21,12 +21,13 @@ public class ManagerPoster {
     }
 
     public PosterItem[] getAll() {
+        int resultLength;
         if (items.length > count) {
-            count = count;
+            resultLength = count;
         } else {
-            count = items.length;
+            resultLength = items.length;
         }
-        PosterItem[] result = new PosterItem[items.length];
+        PosterItem[] result = new PosterItem[resultLength];
         for (int i = 0; i < result.length; i++) {
             int index = items.length - i - 1;
             result[i] = items[index];

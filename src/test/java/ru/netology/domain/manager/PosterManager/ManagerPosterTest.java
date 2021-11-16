@@ -63,6 +63,25 @@ public void shouldAddMaximumMovies(){
     assertArrayEquals(expected,actual);
 }
 
+@Test
+    public void shouldAddAll(){
+    manager.add(first);
+    manager.add(second);
+    manager.add(third);
+    manager.add(fourth);
+    manager.add(fifth);
+    manager.add(sixth);
+    manager.add(seventh);
+    manager.add(eighth);
+    manager.add(ninth);
+    manager.add(ten);
+    manager.add(eleventh);
+    manager.add(twelve);
+    PosterItem[] actual = manager.getAll();
+    PosterItem[] expected = new PosterItem[]{twelve,eleventh,ten,ninth,eighth,seventh,sixth,fifth,fourth,third};
+    assertArrayEquals(expected, actual);
+}
+
 
 
 
